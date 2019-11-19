@@ -1,0 +1,68 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: CurrencyDB</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">edu.uom.currencymanager.currencies</a> ]
+</div>
+
+<h1>Coverage Summary for Class: CurrencyDB (edu.uom.currencymanager.currencies)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+</tr>
+<tr>
+  <td class="name">CurrencyDB</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package edu.uom.currencymanager.currencies;
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;import java.util.List;
+<i>4</i>&nbsp;
+<i>5</i>&nbsp;public interface CurrencyDB {
+<i>6</i>&nbsp;    Currency getCurrencyByCode(String code);
+<i>7</i>&nbsp;
+<i>8</i>&nbsp;    boolean currencyExists(String code);
+<i>9</i>&nbsp;
+<i>10</i>&nbsp;    List&lt;Currency&gt; getCurrencies();
+<i>11</i>&nbsp;
+<i>12</i>&nbsp;    List&lt;Currency&gt; getMajorCurrencies();
+<i>13</i>&nbsp;
+<i>14</i>&nbsp;    List&lt;ExchangeRate&gt; getMajorCurrencyRates() throws Exception;
+<i>15</i>&nbsp;
+<i>16</i>&nbsp;    ExchangeRate getExchangeRate(String sourceCurrencyCode, String destinationCurrencyCode) throws Exception;
+<i>17</i>&nbsp;
+<i>18</i>&nbsp;    void addCurrency(Currency currency) throws Exception;
+<i>19</i>&nbsp;
+<i>20</i>&nbsp;    void deleteCurrency(String code) throws Exception;
+<i>21</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2019-11-17 16:58</div>
+</div>
+</body>
+</html>
