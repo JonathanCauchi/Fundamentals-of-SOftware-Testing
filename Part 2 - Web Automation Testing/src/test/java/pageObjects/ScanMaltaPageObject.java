@@ -35,7 +35,7 @@ public class ScanMaltaPageObject {
     }
 
     public void validateLogin() {
-        assertTrue(browser.findElement(By.className("hello")).getText().contains("Hello, Anshu Saurabh!"));
+        assertTrue(browser.findElement(By.className("hello")).getText().contains("Hello Jonathan!"));
     }
 
     public void invalidLogin(String username, String wrongPass) {
