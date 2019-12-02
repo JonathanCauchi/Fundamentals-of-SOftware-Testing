@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="eaeaff12-781a-4851-b2f0-143ffa1c77eb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/ScanMaltaPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/ScanMaltaPageObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/cucumber/stepdefs/ScanMaltaStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/cucumber/stepdefs/ScanMaltaStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ScanMalta.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ScanMalta.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/Assignment 2.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/ScanMalta.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/ScanMalta.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObjects/ScanMaltaPageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pageObjects/ScanMaltaPageObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/cucumber/stepdefs/ScanMaltaStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/cucumber/stepdefs/ScanMaltaStepDefs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Task2/ScanMaltaSystemTesting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Task2/ScanMaltaSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Task2/ScanModelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Task2/ScanModel.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,10 +35,16 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/test" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -57,7 +58,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber java.Scenario: 5 Add multiple products to cart">
+  <component name="RunManager" selected="Cucumber java.Scenario: 1 Valid Login">
     <configuration name="Scenario: 1 Valid Login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="4" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/ScanMalta.feature" />
@@ -134,28 +135,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CucumberRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: 6 Removing a product from cart" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="4" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/ScanMalta.feature" />
+      <option name="GLUE" value="test.cucumber.stepdefs" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="Assignment 2" />
+      <option name="NAME_FILTER" value="^6 Removing a product from cart$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm4SMFormatter --name &quot;^6 Removing a product from cart$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: 6 Removing a product from cart" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.*" />
+          <option name="PATTERN" value="cucumber.api.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.CucumberRunner" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber java.Scenario: 5 Add multiple products to cart" />
         <item itemvalue="Cucumber java.Scenario: 1 Valid Login" />
+        <item itemvalue="Cucumber java.Scenario: 5 Add multiple products to cart" />
+        <item itemvalue="Cucumber java.Scenario: 6 Removing a product from cart" />
         <item itemvalue="Cucumber java.Scenario: 4 Add product to cart" />
         <item itemvalue="Cucumber java.Scenario: 3 Product Search" />
-        <item itemvalue="JUnit.CucumberRunner" />
       </list>
     </recent_temporary>
   </component>
@@ -180,7 +185,13 @@
       <workItem from="1574438975744" duration="4897000" />
       <workItem from="1574444025028" duration="589000" />
       <workItem from="1574444721730" duration="164000" />
-      <workItem from="1574445355724" duration="2189000" />
+      <workItem from="1574445355724" duration="2785000" />
+      <workItem from="1574497811935" duration="7402000" />
+      <workItem from="1574594256689" duration="3548000" />
+      <workItem from="1574752124797" duration="5589000" />
+      <workItem from="1574851297200" duration="10428000" />
+      <workItem from="1574929913203" duration="14421000" />
+      <workItem from="1575020776591" duration="2970000" />
     </task>
     <servers />
   </component>

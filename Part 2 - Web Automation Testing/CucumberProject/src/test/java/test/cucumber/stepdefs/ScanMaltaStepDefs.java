@@ -25,9 +25,10 @@ public class ScanMaltaStepDefs {
 
     @Before
     public void setup() {
-        System.setProperty("webdriver.chrome.driver", "D:/anshu/Downloads/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "D:/chromedriver.exe");
         browser = new ChromeDriver();
         sut = new ScanMaltaPageObject(browser);
+        browser.manage().window().maximize();
     }
 
     @After
@@ -38,10 +39,7 @@ public class ScanMaltaStepDefs {
     //1
     @Given("I am a user on the website")
     public void i_am_a_user_on_the_website() {
-        sut.getPage();
-        //browser.get("https://www.scanmalta.com/newstore/customer/account/login/");
-        //sleep(5);
-    }
+        sut.getPage();    }
 
     @When("I log in using valid credentials {string} and {string}")
     public void i_log_in_using_valid_credentials(String username, String password) {
@@ -61,7 +59,6 @@ public class ScanMaltaStepDefs {
 
     @Then("I should not be logged in")
     public void i_should_not_be_logged_in() {
-        //assertTrue(browser.findElement(By.className("error-msg")).getText().contains("Invalid login or password."));
         sut.validateInvalidLogin();
     }
 
@@ -87,10 +84,15 @@ public class ScanMaltaStepDefs {
         sut.productDetailsFound();
     }
 
+    //4
+//    @Given("I am a logged in user on the website  {string} and {string}")
+//    public void i_am_a_logged_in_user_on_the_website(String username, String password) {
+//        sut.getPage();
+//        sut.validLogin(username, password);
+//    }
 
     @Given("my shopping cart is empty")
     public void my_shopping_cart_is_empty() {
-        sut.goToCart();
         sut.emptyCart();
     }
 
@@ -111,8 +113,6 @@ public class ScanMaltaStepDefs {
         sut.cartHasOneItem(int1);
     }
 
-
-
     @When("I add {int} products to my shopping cart")
     public void i_add_num_products_products_to_my_shopping_cart(int int1) {
         sut.selectMultipleProductsAndAddToCart(int1);
@@ -123,5 +123,21 @@ public class ScanMaltaStepDefs {
         sut.getCartAmount();
         sut.cartHasMultipleItems(int1);
     }
+
+    
+
+    @Given("my shopping cart has {int} products")
+    public void my_shopping_cart_has_products(Integer int1) {
+        sut.emptyCart();
+        sut.addTwoProducts();
+        sut.getCartAmount();
+        sut.cartHasMultipleItems(int1);
+    }
+
+    @When("I remove the first product in my cart")
+    public void i_remove_the_first_product_in_my_cart() {
+        sut.removeFirstProduct();
+    }
+
 
 }
