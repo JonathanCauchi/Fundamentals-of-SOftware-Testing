@@ -35,7 +35,7 @@ public class ScanMaltaPageObject {
     }
 
     public void validateLogin() {
-        assertTrue(browser.findElement(By.className("hello")).getText().contains("Hello, Jonathan Cauchi!"));
+        assertTrue(browser.findElement(By.className("hello")).getText().contains("Hello Jonathan Cauchi!"));
         sleep(2);
     }
 
