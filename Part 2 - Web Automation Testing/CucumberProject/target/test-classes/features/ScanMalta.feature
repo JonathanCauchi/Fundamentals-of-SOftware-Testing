@@ -6,7 +6,7 @@ Feature: ScanMalta
 
   Scenario: 2 Invalid Login
   Given I am a user on the website
-  When I log in using invalid credentials "jonathan.cauchi.14@um.edu.mt" and "12345678"
+  When I log in using invalid credentials "jonathan.cauchi.14@um.edu.mt" and "Logininfo1234"
   Then I should not be logged in
 
   Scenario: 3 Product Search
